@@ -3,198 +3,307 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Крафтовые острые соусы и специи | Домашняя ферма перцев</title>
-  <meta name="description" content="Крафтовые соусы из выращенных вручную перцев: Зеленый Хабанеро, Каролина Рипер, острая соль и копченый шоколадный хабанеро.">
+  <title>Крафтовые острые соусы и пряности | Домашняя культура перца</title>
+  <meta name="description" content="Информационный гид по крафтовым соусам натуральной ферментации из сортов Carolina Reaper, Зеленый и Шоколадный Хабанеро.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;0,900;1,400&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@1,600;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Фоновые визуальные эффекты -->
+  <!-- Фоновые эффекты свечения -->
   <div class="bg-glow glow-1"></div>
   <div class="bg-glow glow-2"></div>
 
-  <header class="header">
-    <div class="container">
-      <div class="badge">🔥 100% Homegrown & Handmade</div>
-      <h1 class="brand-title">CRAFT PEPPER <span class="accent">LAB</span></h1>
-      <p class="brand-tagline">От семечка до бутылочки: авторские соусы и пряности из редких суперхотов</p>
+  <!-- Главный экран (Hero) с вашим фото Carolina Reaper -->
+  <header class="hero-section">
+    <div class="hero-bg-wrapper">
+      <img src="images/hero-reaper.jpg" alt="Урожай свежего перца Carolina Reaper" class="hero-bg-img">
+      <div class="hero-gradient-overlay"></div>
+    </div>
+    
+    <div class="container hero-content">
+      <div class="badge-tag">🌱 Домашняя перечная ферма</div>
+      <h1 class="hero-title">Искусство <span class="accent">настоящей остроты</span></h1>
+      <p class="hero-subtext">
+        Выращиваем суперхоты от семечка до урожая и создаем соусы живой ферментации по традиционной технологии.
+      </p>
       
-      <div class="hero-actions">
-        <a href="#products" class="btn btn-secondary">Смотреть меню</a>
-        <a href="https://t.me/your_telegram_username" target="_blank" class="btn btn-primary pulse">
-          <svg class="tg-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
-          </svg>
-          Заказать в Telegram
-        </a>
+      <div class="hero-nav-pills">
+        <a href="#fermentation" class="pill-link">О ферментации</a>
+        <a href="#products" class="pill-link">Соусы и специи</a>
+        <a href="#storage" class="pill-link">Как употреблять</a>
       </div>
     </div>
   </header>
 
   <main class="container">
-    
-    <!-- История / Особенности -->
-    <section class="story-card">
-      <div class="story-badge">О производстве</div>
-      <h2>Настоящий огонь без химии и концентратов</h2>
-      <p>Каждый перец выращен с любовью в контролируемых условиях без химикатов. Мы не используем искусственные экстракты — вся острота и вкус происходят исключительно от спелых свежих плодов, раскрывающихся взрывным букетом ароматов.</p>
-      
-      <div class="stats-grid">
-        <div class="stat-item">
-          <span class="stat-val">30 мл</span>
-          <span class="stat-lbl">Идеальный шот-формат</span>
+
+    <!-- Секция 1: Философия ферментации (Tabasco style) -->
+    <section id="fermentation" class="info-block fermentation-card">
+      <div class="block-label">Технология создания</div>
+      <h2>Почему именно ферментация?</h2>
+      <div class="ferm-grid">
+        <div class="ferm-text">
+          <p>
+            Большинство магазинных соусов готовятся быстрым увариванием с добавлением большого количества столового уксуса, сахара и загустителей. Мы выбрали совершенно другой путь — <strong>естественную лактоферментацию</strong> (метод молочнокислого брожения, по которому создается знаменитый соус Tabasco).
+          </p>
+          <div class="feature-bullets">
+            <div class="bullet-item">
+              <span class="bullet-icon">⏳</span>
+              <div>
+                <strong>Выдержка и созревание</strong>
+                <p>Измельченные плоды бродят в собственном соку в течение недель. За это время бактерии естественным образом расщепляют сахара, создавая благородную кислинку.</p>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="bullet-icon">👅</span>
+              <div>
+                <strong>Многослойный, живой вкус</strong>
+                <p>Ферментация полностью преображает аромат: резкий химический удар капсаицина превращается в глубокий, фруктово-солодовый и объемный букет с долгим согревающим послевкусием.</p>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="bullet-icon">🚫</span>
+              <div>
+                <strong>Без искусственных экстрактов</strong>
+                <p>Никаких синтетических концентратов остроты, красителей или консервантов. Только чистый перец, время и соль.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="stat-item">
-          <span class="stat-val">100%</span>
-          <span class="stat-lbl">Натуральный урожай</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-val">0%</span>
-          <span class="stat-lbl">Экстрактов и капсаицина</span>
+        <div class="ferm-image-wrapper">
+          <img src="images/fermentation.jpg" alt="Процесс лактоферментации острого перца" class="ferm-img">
+          <span class="img-caption">Ферментация в процессе: созревание перечного меша</span>
         </div>
       </div>
     </section>
 
-    <!-- Каталог продуктов -->
+    <!-- Секция 2: Подробный каталог соусов и пряностей -->
     <section id="products" class="products-section">
-      <h2 class="section-title">Ассортимент</h2>
-      <p class="section-sub">Нажмите на карточку или кнопку для заказа нужной позиции</p>
+      <div class="text-center">
+        <div class="block-label">Коллекция</div>
+        <h2 class="section-title">Соусы и авторские пряности</h2>
+        <p class="section-sub">Вся линейка изготавливается микро-партиями из собственного урожая</p>
+      </div>
 
-      <div class="product-grid">
+      <div class="product-cards-list">
 
-        <!-- 1. Соус Зеленый Хабанеро -->
-        <article class="product-card card-green">
-          <div class="card-glow"></div>
-          <div class="product-badge green-badge">Соус 30 мл</div>
-          <div class="pepper-icon">🌿 🌶️</div>
-          <h3>Зелёный Хабанеро</h3>
-          <div class="heat-bar">
-            <span class="heat-title">Острота:</span>
-            <div class="flames">
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span>🔥</span>
-              <span>🔥</span>
+        <!-- Продукт 1: Красный соус Carolina Reaper -->
+        <article class="detailed-card card-reaper">
+          <div class="card-inner">
+            <div class="card-media">
+              <img src="images/hero-reaper.jpg" alt="Соус Carolina Reaper" class="product-photo">
+              <span class="product-type-badge badge-reaper">Экстремальный соус • 30 мл</span>
             </div>
-            <span class="scoville">~150 000 – 250 000 SHU</span>
-          </div>
-          <p class="product-desc">
-            Свежий, травянисто-цитрусовый соус на основе спелых зеленых плодов Habanero с легкой кислинкой лайма. Яркий бодрящий вкус с мягким, нарастающим согревающим послевкусием.
-          </p>
-          <div class="pairing">
-            <strong>Идеально к:</strong> рыбе, креветкам, тако, птице, яичнице и свежим салатам.
-          </div>
-          <div class="product-footer">
-            <span class="volume">Объем: 30 мл</span>
-            <a href="https://t.me/your_telegram_username?text=Привет!%20Хочу%20заказать%20Зеленый%20Хабанеро" target="_blank" class="btn btn-card green-btn">Выбрать соус</a>
+            <div class="card-info">
+              <div class="card-header">
+                <h3>Красный соус: Carolina Reaper</h3>
+                <div class="heat-meter">
+                  <span class="meter-label">Жгучесть:</span>
+                  <div class="chili-icons">
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                  </div>
+                  <span class="shu-tag shu-extreme">~1 400 000 – 1 800 000 SHU</span>
+                </div>
+              </div>
+              <p class="product-story">
+                Соус для подготовленных ценителей на основе одного из самых жгучих перцев планеты. Благодаря длительной ферментации первые несколько секунд на языке ощущаются нежные вишнево-фруктовые оттенки, после чего плавно накатывает сокрушительная, мощная и чистая волна жара.
+              </p>
+              <div class="spec-table">
+                <div class="spec-row">
+                  <span class="spec-name">Основа:</span>
+                  <span class="spec-val">Спелые плоды Carolina Reaper, лакто-ферментат</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Формат:</span>
+                  <span class="spec-val">30 мл стеклянная бутылочка (дозировка каплями)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Гастрономия:</span>
+                  <span class="spec-val">Мраморные стейки, томленые ребра, бургеры, супы фо-бо/харчо</span>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- 2. Соус Красный Каролина Рипер -->
-        <article class="product-card card-red">
-          <div class="card-glow"></div>
-          <div class="product-badge red-badge">Экстремальный • 30 мл</div>
-          <div class="pepper-icon">💀 🌶️</div>
-          <h3>Каролина Рипер</h3>
-          <div class="heat-bar">
-            <span class="heat-title">Острота:</span>
-            <div class="flames">
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
+        <!-- Продукт 2: Зеленый соус Хабанеро -->
+        <article class="detailed-card card-green">
+          <div class="card-inner">
+            <div class="card-media">
+              <img src="images/green-habanero.jpg" alt="Соус Зеленый Хабанеро" class="product-photo">
+              <span class="product-type-badge badge-green">Ферментированный соус • 30 мл</span>
             </div>
-            <span class="scoville">~1 200 000 – 1 800 000 SHU</span>
-          </div>
-          <p class="product-desc">
-            Огненный шквал на основе легендарного Carolina Reaper. Первые 5 секунд раскрываются фруктовые и вишневые нотки, после чего накрывает глубокая, мощная и бескомпромиссная волна жара.
-          </p>
-          <div class="pairing">
-            <strong>Идеально к:</strong> стейкам, ребрышкам BBQ, сочным бургерам и наваристым супам (дозировать каплями!).
-          </div>
-          <div class="product-footer">
-            <span class="volume">Объем: 30 мл</span>
-            <a href="https://t.me/your_telegram_username?text=Привет!%20Хочу%20заказать%20Каролину%20Рипер" target="_blank" class="btn btn-card red-btn">Выбрать соус</a>
+            <div class="card-info">
+              <div class="card-header">
+                <h3>Зеленый соус: Хабанеро</h3>
+                <div class="heat-meter">
+                  <span class="meter-label">Жгучесть:</span>
+                  <div class="chili-icons">
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span>🌶️</span>
+                    <span>🌶️</span>
+                  </div>
+                  <span class="shu-tag shu-medium">~150 000 – 250 000 SHU</span>
+                </div>
+              </div>
+              <p class="product-story">
+                Освежающий, сочный и бодрящий соус из отборных зеленых плодов Habanero. Натуральное брожение дает хрустящую фруктовую кислотность, отлично балансирующую природную теплоту перца. Острота уверенная, но мягкая и питьевая.
+              </p>
+              <div class="spec-table">
+                <div class="spec-row">
+                  <span class="spec-name">Основа:</span>
+                  <span class="spec-val">Зеленый Habanero ферментированный, лаймовая нота</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Формат:</span>
+                  <span class="spec-val">30 мл стеклянная бутылочка</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Гастрономия:</span>
+                  <span class="spec-val">Морепродукты, севиче, тако, яичница, свежие боулы, курица</span>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- 3. Острая соль -->
-        <article class="product-card card-amber">
-          <div class="card-glow"></div>
-          <div class="product-badge amber-badge">Специя</div>
-          <div class="pepper-icon">🧂 ⚡</div>
-          <h3>Острая Крафтовая Соль</h3>
-          <div class="heat-bar">
-            <span class="heat-title">Острота:</span>
-            <div class="flames">
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span>🔥</span>
-              <span>🔥</span>
-              <span>🔥</span>
+        <!-- Продукт 3: Сушеный шоколадный хабанеро -->
+        <article class="detailed-card card-choco">
+          <div class="card-inner">
+            <div class="card-media">
+              <img src="images/chocolate-habanero.jpg" alt="Молотый шоколадный хабанеро" class="product-photo">
+              <span class="product-type-badge badge-choco">Премиальная пряность</span>
             </div>
-            <span class="scoville">Пикантная / Умеренная</span>
-          </div>
-          <p class="product-desc">
-            Крупная морская соль, выдержанная со свежими перечными соками и измельченными хлопьями наших перцев. Придает любому блюду глубокий перечный аромат и деликатную жгучесть без перегруза.
-          </p>
-          <div class="pairing">
-            <strong>Идеально к:</strong> стейкам перед подачей, запеченному картофелю, яичнице, свежим томатам и попкорну.
-          </div>
-          <div class="product-footer">
-            <span class="volume">Крафтовая баночка</span>
-            <a href="https://t.me/your_telegram_username?text=Привет!%20Хочу%20заказать%20Острую%20соль" target="_blank" class="btn btn-card amber-btn">Выбрать соль</a>
+            <div class="card-info">
+              <div class="card-header">
+                <h3>Шоколадный Хабанеро (Молотый)</h3>
+                <div class="heat-meter">
+                  <span class="meter-label">Жгучесть:</span>
+                  <div class="chili-icons">
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span>🌶️</span>
+                  </div>
+                  <span class="shu-tag shu-high">~300 000 – 425 000 SHU</span>
+                </div>
+              </div>
+              <p class="product-story">
+                Редкая разновидность Habanero цвета горького шоколада. Высушен при деликатной температуре до 42°C, что сохранило эфирные масла, и смолот в тонкую пудру. Обладает глубоким дымно-землистым ароматом и богатым послевкусием.
+              </p>
+              <div class="spec-table">
+                <div class="spec-row">
+                  <span class="spec-name">Состав:</span>
+                  <span class="spec-val">100% сортовой Chocolate Habanero деликатной сушки</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Особенность:</span>
+                  <span class="spec-val">Дымный профиль без копчения жидким дымом</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Гастрономия:</span>
+                  <span class="spec-val">Чили кон карне, рагу, соусы BBQ, темный шоколад, маринады</span>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- 4. Сушеный шоколадный хабанеро -->
-        <article class="product-card card-choco">
-          <div class="card-glow"></div>
-          <div class="product-badge choco-badge">Пряность</div>
-          <div class="pepper-icon">🍫 🌪️</div>
-          <h3>Шоколадный Хабанеро</h3>
-          <div class="heat-bar">
-            <span class="heat-title">Острота:</span>
-            <div class="flames">
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span class="active">🔥</span>
-              <span>🔥</span>
+        <!-- Продукт 4: Острая соль -->
+        <article class="detailed-card card-amber">
+          <div class="card-inner">
+            <div class="card-media">
+              <img src="images/harvest-1.jpg" alt="Острая соль с хлопьями перца" class="product-photo">
+              <span class="product-type-badge badge-amber">Специя на каждый день</span>
             </div>
-            <span class="scoville">~300 000 – 425 000 SHU</span>
-          </div>
-          <p class="product-desc">
-            100% чистый молотый Chocolate Habanero бережной сушки при низкой температуре. Обладает уникальным дымно-землистым профилем, оттенками темного шоколада и плотной, обволакивающей остротой.
-          </p>
-          <div class="pairing">
-            <strong>Идеально к:</strong> чили кон карне, тушеному мясу, соусам сальса, маринадам и даже горячему шоколаду.
-          </div>
-          <div class="product-footer">
-            <span class="volume">Молотый пудровый помол</span>
-            <a href="https://t.me/your_telegram_username?text=Привет!%20Хочу%20заказать%20Шоколадный%20Хабанеро" target="_blank" class="btn btn-card choco-btn">Выбрать пряность</a>
+            <div class="card-info">
+              <div class="card-header">
+                <h3>Крафтовая Острая Соль</h3>
+                <div class="heat-meter">
+                  <span class="meter-label">Жгучесть:</span>
+                  <div class="chili-icons">
+                    <span class="lit">🌶️</span>
+                    <span class="lit">🌶️</span>
+                    <span>🌶️</span>
+                    <span>🌶️</span>
+                    <span>🌶️</span>
+                  </div>
+                  <span class="shu-tag shu-mild">Деликатная / Средняя</span>
+                </div>
+              </div>
+              <p class="product-story">
+                Кристаллы морской соли, пропитанные соком ферментированных перцев и смешанные с микро-хлопьями урожая. Позволяет придать блюду аппетитный перечный оттенок и согревающую пикантность прямо за столом без риска перестараться.
+              </p>
+              <div class="spec-table">
+                <div class="spec-row">
+                  <span class="spec-name">Состав:</span>
+                  <span class="spec-val">Морская соль, сок лакто-ферментированных перцев, хлопья чили</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Применение:</span>
+                  <span class="spec-val">Финальный штрих (финишная соль) перед самой подачей</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Гастрономия:</span>
+                  <span class="spec-val">Стейки, печеный картофель, томаты, омлеты, хрустящий хлеб с маслом</span>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- Секция контакта в Telegram -->
-    <section class="cta-section">
-      <div class="cta-inner">
-        <h2>Хотите заказать или собрать подарочный набор?</h2>
-        <p>Каждая партия соусов и пряностей готовится ограниченным тиражом (микро-барабаны). Напишите напрямую в Telegram, чтобы уточнить наличие и забронировать заветные бутылочки.</p>
-        <a href="https://t.me/your_telegram_username" target="_blank" class="btn btn-primary btn-lg pulse">
-          <svg class="tg-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
-          </svg>
-          Написать в Telegram
-        </a>
+    <!-- Секция 3: Правила употребления и хранения -->
+    <section id="storage" class="info-block tips-section">
+      <div class="block-label">Рекомендации</div>
+      <h2>Как хранить и дозировать соусы в 30 мл</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-num">01</div>
+          <h4>Хранение</h4>
+          <p>Так как в соусах нет химических консервантов, после открытия баночку рекомендуется хранить в холодильнике плотно закрытой. Живая ферментация сохраняет свежесть месяцами.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">02</div>
+          <h4>Дозировка капельницей</h4>
+          <p>Формат 30 мл предназначен для точечной дегустации. Особенно соус из Carolina Reaper: начните с одной спичечной головки или капли на порцию блюда.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">03</div>
+          <h4>Если переборщили с остротой</h4>
+          <p>Капсаицин не растворяется в воде. Если во рту горит пожар, потушить его помогут молоко, мороженое, сыр, жирная сметана или ложка теплого риса.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ненавязчивый блок связи в конце -->
+    <section class="order-contact-block">
+      <div class="order-inner">
+        <div class="order-badge">Микро-производство</div>
+        <h2>Понравился соус или хотите попробовать свежую партию?</h2>
+        <p>
+          Мы варим соусы и собираем специи исключительно под урожай малыми партиями. Если хотите заказать баночку себе, в подарок другу-чилихеду или просто пообщаться о выращивании редких сортов — напишите мне в Telegram.
+        </p>
+        <div class="contact-actions">
+          <a href="https://t.me/your_telegram_username" target="_blank" class="btn-tg">
+            <svg class="tg-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+            </svg>
+            Написать автору в Telegram
+          </a>
+        </div>
       </div>
     </section>
 
@@ -202,8 +311,8 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Homegrown Craft Pepper. Сделано с любовью к острым культурам.</p>
-      <p class="qr-hint">QR-код на баночке ведет на этот сайт</p>
+      <p>© 2026 Крафтовое производство острых соусов и культурных перцев.</p>
+      <p class="qr-note">Страница разработана для быстрого доступа по QR-коду с этикетки бутылки</p>
     </div>
   </footer>
 
